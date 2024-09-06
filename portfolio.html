@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.4; /* Reduce line height to make the text more compact */
+            font-size: 0.9em; /* Reduce overall font size for the whole page */
+        }
+
+        header {
+            background-color: #654321;
+            color: #fff;
+            padding: 40px 0; /* Reduce padding to make the header smaller */
+            text-align: center;
+            font-size: 2em; /* Reduce font size in the header */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px; /* Reduce margin between navigation items */
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em; /* Reduce font size of navigation links */
+        }
+
+        .content {
+            padding: 50px 10%; /* Reduce padding to make the content area smaller */
+            max-width: 1000px; /* Reduce the maximum width of the content area */
+            margin: 0 auto;
+        }
+
+        #about {
+            display: flex;
+            color: #fff;
+            background-color: #654321;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 40px; /* Reduce margin bottom */
+            border-radius: 15px;
+            flex-direction: column; /* Stack text and image vertically */
+            align-items: center;
+            text-align: center;
+        }
+
+        #about .text {
+            padding: 40px; /* Reduce padding */
+            background-color: rgba(101, 67, 33, 0.7);
+        }
+
+        #about .text p {
+            font-size: 3em; /* Increase font size for the name */
+            font-weight: bold;
+            color: #ff69b4;
+            margin: 0;
+            white-space: nowrap; /* Ensure text stays on one line */
+        }
+
+        #about .image {
+            width: 100%; /* Adjust the image to fit within the reduced size */
+            height: 200px; /* Set a fixed height for the image */
+            background-image: url('https://thumbs.dreamstime.com/z/hands-businesswoman-typing-text-laptop-keyboard-cafe-closeup-photo-background-working-laptop-girl-formal-wear-184451629.jpg?ct=jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #projects h2 {
+            font-size: 2.5em; /* Reduce font size of section heading */
+            margin-bottom: 30px; /* Reduce margin */
+            text-align: center;
+            color: #654321;
+        }
+
+        #projects .projects-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        #projects .project {
+            flex: 1;
+            padding: 20px; /* Reduce padding */
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #projects .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 15px; /* Reduce margin */
+        }
+
+        #projects .project h3 {
+            font-size: 2em; /* Reduce font size */
+            margin-bottom: 15px; /* Reduce margin */
+        }
+
+        #projects .project p {
+            font-size: 1.2em; /* Reduce font size */
+        }
+
+        #contact {
+            margin: 60px 0; /* Reduce margin */
+            padding: 60px; /* Reduce padding */
+            background-color: #654321;
+            color: #fff;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5em; /* Reduce font size */
+            margin-bottom: 30px; /* Reduce margin */
+        }
+
+        #contact p {
+            font-size: 1.5em; /* Reduce font size */
+            margin-bottom: 30px; /* Reduce margin */
+        }
+
+        #contact form {
+            max-width: 600px; /* Reduce maximum width */
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Reduce gap between form elements */
+        }
+
+        #contact label {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.3em; /* Reduce font size */
+        }
+
+        #contact input, #contact textarea {
+            padding: 15px; /* Reduce padding */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 100%;
+            font-size: 1.3em; /* Reduce font size */
+        }
+
+        #contact button {
+            padding: 15px 30px; /* Reduce padding */
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.5em; /* Reduce font size */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0; /* Reduce padding */
+            margin-top: 40px; /* Reduce margin */
+            font-size: 1.3em; /* Reduce font size */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <div class="content">
+        <div id="about">
+            <div class="text">
+                <p>Aswini Challa</p>
+            </div>
+            <div class="image"></div>
+        </div>
+
+        <div id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="https://www.gauri.com/wp-content/uploads/Fotolia_101313719_Subscription_Monthly_M-planning-an-ecommerce-project-980x544.jpeg" alt="Project One">
+                    <div>
+                        <h3>Project One</h3>
+                        <p>An e-commerce website is an online platform that enables businesses or individuals to buy and sell goods, services, or digital products over the internet. These websites act as virtual storefronts where customers can browse products, place orders, and make payments from the comfort of their own homes or on the go.</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img src="https://image.slidesharecdn.com/awpprojectppt-200301120080-230417032952-d8367750/75/Food-Ordering-System-1-2048.jpg" alt="Project Two">
+                    <div>
+                        <h3>Project Two</h3>
+                        <p>A food ordering project is an application or system designed to facilitate the process of ordering food from restaurants or food providers. This project typically includes features that allow users to browse menus, place orders, and manage their food delivery or pickup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch, feel free to send me a message!</p>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </
